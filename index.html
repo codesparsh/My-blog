@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+ <style class="css">
+ 	
+ </style>
+ <link rel="stylesheet" type="text/css" href="A:\website\style.css">
+ <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <script 
+      src="https://code.jquery.com/jquery-2.2.4.min.js"
+      integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+      crossorigin="anonymous"></script>
+
+
+</head>
+
+
+<body>
+	
+				<div id="side" class="sidebar" align="right">
+					<button class ="btn"><i class="material-icons">home</i><sup> </sup></button></br>
+					<button class="btn"><i class="material-icons">menu </i><sup> </sup></button></br>
+					<button class="btn"><i class="material-icons">people</i><sup> </sup></button>
+				</div>
+	 <div class ="container">
+        <div class="item" id="back">
+             
+				
+            	
+    				<div style="line-height: 40px;">
+    					<h1 id="name" >Sparsh Tandon</h1>
+    		    			<h3 id="dis" >Competitive coder | Artist</h3>
+    		   					<div id="refer" style="letter-spacing: 20px;" >
+    								<a href="https://www.linkedin.com/in/sparsh-tandon-813212163/" class="fa fa-linkedin"></a>
+    								<a href="https://twitter.com/Sparsh84231342" class="fa fa-twitter"></a>
+    							  </div>
+    				</div>
+        </div>
+        
+       <div  class="item" id="back2" >
+           <div class="team"  >
+           	My Team
+           </div>
+           <div class="major"  >
+            <div class="block" >
+
+  	           	<div id="pic1" class="pics" >
+                   <button class="btn2" data-bid="a1"><i class="material-icons">arrow_right_alt</i></button>
+                   
+  	           	</div>
+  	           	<p class="team_name">
+             			Archit
+             		</p>
+                <div class="myModal" class="modal">
+                        <div class="modal-content" id="a1">
+                          <span class="close">&times;</span>
+                          <div style="background: url(archit.png);background-size: cover;" class="pics"></div>
+                        </div>
+              </div>
+            </div>
+
+            <div class="block" >
+
+	       	  	<div id="pic2" class="pics" >
+                 <button class="btn2" data-bid="a2"><i class="material-icons">arrow_right_alt</i></button>
+	       	  	</div>
+                <p class="team_name">
+	       	  	  Lokesh
+           		  </p>
+                <div class="myModal" class="modal">
+                        <div class="modal-content" id="a2">
+                          <span class="close">&times;</span>
+                          <div style="background: url(lokesh.png);background-size: cover;" class="pics"></div>
+                        </div>
+
+                </div>
+       	    </div>
+
+          	<div  class="block" >
+
+           		<div id="pic3" class="pics" >
+                 <button class="btn2" data-bid="a3"><i class="material-icons">arrow_right_alt</i></button>
+           	    </div>
+           	    <p class="team_name">
+           			Me
+           		  </p>
+                <div class="myModal" class="modal">
+                      <div class="modal-content" id="a3">
+                        <span class="close">&times;</span>
+                        <div style="background: url(me.png);background-size: cover;" class="pics"></div>
+                      </div>
+
+                </div>
+            </div>
+
+           	<div  class="block" >
+
+           		<div id="pic4" class="pics" >
+                 <button class="btn2" data-bid="a4"><i class="material-icons">arrow_right_alt</i></button>
+                </div>
+                <p class="team_name">
+           			Jayant
+           		  </p>
+                <div class="myModal" class="modal">
+                      <div class="modal-content" id="a4">
+                        <span class="close">&times;</span>
+                        <div style="background: url(jayant.png);background-size: cover;" class="pics"></div>
+                      </div>
+
+              </div>
+            </div>
+
+           	<div  class="block" >
+
+           		<div id="pic5" class="pics" >
+                 <button class="btn2" data-bid="a5"><i class="material-icons">arrow_right_alt</i></button>
+                </div>
+                <p class="team_name">
+           			Ahsan
+           		  </p>
+                <div class="myModal" class="modal">
+                      <div class="modal-content" id="a5">
+                        <span class="close">&times;</span>
+                        <div style="background: url(ahsan.png);background-size: cover;" class="pics"></div>
+                      </div>
+
+                </div>
+            </div>
+
+           	<div  class="block" >
+
+           		<div id="pic6" class="pics" >
+                <button class="btn2" data-bid="a6"><i class="material-icons">arrow_right_alt</i></button>
+                </div>
+                <p class="team_name">
+           			Anurag
+           		  </p>
+                <div class="myModal" class="modal">
+                      <div class="modal-content" id="a6">
+                        <span class="close">&times;</span>
+                        <div style="background: url(anurag.png);background-size: cover;" class="pics"></div>
+                      </div>
+
+                </div>
+              </div>
+            </div>
+           </div>
+       </div>
+    
+    </div>
+    <script  >
+      $(document).on('click','.btn2',function(){
+  var myTargetModal = '#' + $(this).data('bid');
+  $('.myModal').hide();
+  $('.modal-content').hide();
+  
+  $('.myModal').fadeIn();
+  $(myTargetModal).fadeIn();
+});
+
+$("body" ).on( "click",".close", function() {
+    $('.myModal').hide();
+  $('.modal-content').hide();
+});
+
+    </script>
+ 
+</body>
+
+</html>
